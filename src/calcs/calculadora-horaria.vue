@@ -35,11 +35,7 @@
               <h5 class="mt-1">
                 {{
                   `${
-                    zona1.zona == 0
-                      ? "UTC"
-                      : zona1.zona < 0
-                      ? "UTC" + zona1.zona
-                      : "UTC+" + zona1.zona
+                    zona1.zona == 0 ? "UTC"  : zona1.zona < 0 ? "UTC" + zona1.zona : "UTC+" + zona1.zona
                   } ${
                     zona1.hora < 12
                       ? String(zona1.hora).padStart(2, "0")
@@ -98,7 +94,6 @@
         </MDBCard>
       </MDBCol>
     </MDBRow>
-    <MDBRow> </MDBRow>
   </div>
 </template>
 

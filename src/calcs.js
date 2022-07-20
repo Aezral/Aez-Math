@@ -1,6 +1,6 @@
 import RT from "./calcs/razones-trigonometricas";
 import CH from "./calcs/calculadora-horaria";
-import PH from "./calcs/calculadora-ph";
+import CB from "./calcs/conversor-de-bases";
 
 const calcs = [
   {
@@ -24,15 +24,16 @@ const calcs = [
     },
   },
   {
-    name: "Calculadora de PH",
-    path: "/calculadoras/calculadora-ph",
-    component: PH,
+    name: "Conversor de bases",
+    path: "/calculadoras/conversor-de-bases",
+    component: CB,
     props: {
       icon:'atom',
       description:
-        "Ingresa un dato, la página calculará los datos faltantes relativos al PH",
+        "Conversor de bases númericas.",
     },
   },
+
 ];
 
 export default calcs;
